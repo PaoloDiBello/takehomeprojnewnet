@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './SearchBar'
-import ListUser from './ListUser'
+import ListPhotos from './ListPhotos'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
-import SignUp from './SignUp'
 import Nothing from './Nothing.jsx'
-
+import Page2 from './Page2'
 
 //const MyContext = React.createContext();
 
-
 /**************************************************/
-
 class WrapUp extends Component {
   state = {
     input: ''
@@ -24,13 +21,10 @@ class WrapUp extends Component {
   }
 
   render() {
-    window.$ = "HI"
     return (
       <React.Fragment>
-        <ListUser input={this.state.input} />
         <SearchBar passList={this.handleList} />
-        <Link to="/signup" style={{ display: "flex", justifyContent: "center" }} >SignUp</Link>
-        {window.$}
+        <ListPhotos input={this.state.input} />
       </React.Fragment >
     )
   }
@@ -48,18 +42,11 @@ class App extends Component {
     return (
       <Router >
         <div >
-
-
           <Switch >
-            <Route exact path="/signup" component={SignUp} />
             <Route exact path="/" component={WrapUp} />
-            <Route exact path="/success" component={SearchBar} />
-            <Route exact path="/signup/:id" component={SignUp} />
-            <Route path="/signup/:id/password/:password" component={SignUp} />
-            { /* Used when route redirect to */}
-
-            <Route exact path="/hi">
-              <Redirect to="/signup" />
+            <Route exact path="/page2" component={Page2} />
+            <Route exact path="/pagina2">
+              <Redirect to="/page2" />
             </Route>
             <Route component={Nothing} status={404} />
           </Switch>
