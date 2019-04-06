@@ -1,13 +1,13 @@
 {
-  "main.css": "/takehomeprojnewnet/static/css/main.3fd02f50.chunk.css",
-  "main.js": "/takehomeprojnewnet/static/js/main.ff38ed6f.chunk.js",
-  "main.js.map": "/takehomeprojnewnet/static/js/main.ff38ed6f.chunk.js.map",
+  "main.css": "/takehomeprojnewnet/static/css/main.a33ee991.chunk.css",
+  "main.js": "/takehomeprojnewnet/static/js/main.a32f6112.chunk.js",
+  "main.js.map": "/takehomeprojnewnet/static/js/main.a32f6112.chunk.js.map",
   "runtime~main.js": "/takehomeprojnewnet/static/js/runtime~main.59be5f51.js",
   "runtime~main.js.map": "/takehomeprojnewnet/static/js/runtime~main.59be5f51.js.map",
-  "static/js/2.483213ec.chunk.js": "/takehomeprojnewnet/static/js/2.483213ec.chunk.js",
-  "static/js/2.483213ec.chunk.js.map": "/takehomeprojnewnet/static/js/2.483213ec.chunk.js.map",
+  "static/js/2.c1d8ce45.chunk.js": "/takehomeprojnewnet/static/js/2.c1d8ce45.chunk.js",
+  "static/js/2.c1d8ce45.chunk.js.map": "/takehomeprojnewnet/static/js/2.c1d8ce45.chunk.js.map",
   "index.html": "/takehomeprojnewnet/index.html",
-  "precache-manifest.302ab33c374f1ad67c19bc9011fd41f5.js": "/takehomeprojnewnet/precache-manifest.302ab33c374f1ad67c19bc9011fd41f5.js",
+  "precache-manifest.6a0dbda2de6187b272a78d639ad81caa.js": "/takehomeprojnewnet/precache-manifest.6a0dbda2de6187b272a78d639ad81caa.js",
   "service-worker.js": "/takehomeprojnewnet/service-worker.js",
-  "static/css/main.3fd02f50.chunk.css.map": "/takehomeprojnewnet/static/css/main.3fd02f50.chunk.css.map"
+  "static/css/main.a33ee991.chunk.css.map": "/takehomeprojnewnet/static/css/main.a33ee991.chunk.css.map"
 }
