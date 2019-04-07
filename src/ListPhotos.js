@@ -4,6 +4,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import LinearIndeterminate from './Loader.js'
 export default class ListPhotos extends Component {
 
     state = {
@@ -51,9 +53,11 @@ export default class ListPhotos extends Component {
         // console.log(this.props.input);
 
         return (
-            <List style={{ position: 'absolute', display: 'block', margin: 'auto' }}>
-                {this.state.filteredPhotos.map((photo, i) => <ListItem style={{ display: 'block ' }}> <ListItemText key={i} onClick={this.handleClick.bind(this, i)} style={{ cursor: 'pointer' }}>{photo.title} </ListItemText> {this.state.clicked === i && <ListItemIcon><img src={photo.url} ></img></ListItemIcon>} </ListItem>)}
-            </List>
+            <React.Fragment>
+                {this.state.photos.length > 0 ? (<List style={{ position: 'absolute', display: 'block', margin: 'auto' }}>
+                    {this.state.filteredPhotos.map((photo, i) => <ListItem style={{ display: 'block ' }}> <ListItemText key={i} onClick={this.handleClick.bind(this, i)} style={{ cursor: 'pointer' }}>{photo.title} </ListItemText> {this.state.clicked === i && <ListItemIcon><img src={photo.url} ></img></ListItemIcon>} </ListItem>)}
+                </List>) : <LinearIndeterminate />
+                }    </React.Fragment>
         )
     }
 }
