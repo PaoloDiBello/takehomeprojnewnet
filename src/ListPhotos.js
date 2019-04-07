@@ -8,11 +8,12 @@ export default class ListPhotos extends Component {
         clicked: null,
     }
 
-    async componentWillMount() {
+    async componentDidMount() {
         const fetchPhotos = await fetch("http://jsonplaceholder.typicode.com/photos/");
         const photos = await fetchPhotos.json();
         this.setState({ photos })
         this.setState({ filteredPhotos: photos })
+        // console.log('photos', photos)
     }
 
     async componentWillReceiveProps() {
@@ -30,8 +31,8 @@ export default class ListPhotos extends Component {
     }
 
     handleClick = (i) => {
-        console.log('i', i);
-        if (i == this.state.clicked) {
+        // console.log('i', i);
+        if (i === this.state.clicked) {
             this.setState({ clicked: null })
         } else {
             this.setState({ clicked: i })
@@ -40,7 +41,7 @@ export default class ListPhotos extends Component {
 
     render() {
         const { input } = this.props;
-        console.log(this.props.input);
+        // console.log(this.props.input);
 
 
         return (

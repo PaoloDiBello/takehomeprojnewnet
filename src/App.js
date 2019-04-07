@@ -12,7 +12,6 @@ import Page2 from './Page2'
 class WrapUp extends Component {
   state = {
     input: '',
-    photoList: []
   }
 
   handleList = (data) => {
@@ -24,14 +23,14 @@ class WrapUp extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment >
+        <Link to={"/Page2"}>Page2{' '}</Link><br />
+        <Link to={"/dfjdndjk"}>404</Link>
         <SearchBar passList={this.handleList} />
         <ListPhotos input={this.state.input} />
       </React.Fragment >
     )
   }
-
-
 }
 
 /**************************************************/
@@ -61,5 +60,3 @@ class App extends Component {
 
 
 export default App;
-
-

@@ -18,12 +18,10 @@ export default class SearchBar extends Component {
 
 
     render() {
-        console.log('this.props', this.props)
+        // console.log('this.props', this.props)
         return (
             <div>
-                <input type="text" name="input" onChange={this.handleInput} />
-
-
+                <input type="text" name="input" onChange={this.handleInput} style={{ display: 'flex', margin: 'auto' }} />
             </div>
         )
     }
