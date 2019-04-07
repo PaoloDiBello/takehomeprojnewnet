@@ -20,9 +20,9 @@ export default class SearchBar extends Component {
     render() {
         // console.log('this.props', this.props)
         return (
-            <div>
+            <form autocomplete="off">
                 <input type="text" name="input" onChange={this.handleInput} style={{ display: 'flex', margin: 'auto' }} />
-            </div>
+            </form >
         )
     }
 }
