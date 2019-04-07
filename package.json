@@ -2,7 +2,9 @@
   "name": "take-home-project-new-net",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://paolodibello.github.io/takehomeprojnewnet",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -16,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "flow": "flow"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

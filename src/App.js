@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './SearchBar'
 import ListPhotos from './ListPhotos'
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 import Nothing from './Nothing.jsx'
 import Page2 from './Page2'
 
@@ -11,7 +11,8 @@ import Page2 from './Page2'
 /**************************************************/
 class WrapUp extends Component {
   state = {
-    input: ''
+    input: '',
+    photoList: []
   }
 
   handleList = (data) => {
@@ -19,6 +20,7 @@ class WrapUp extends Component {
       input: data
     })
   }
+
 
   render() {
     return (
@@ -41,7 +43,7 @@ class App extends Component {
 
     return (
       <Router >
-        <div >
+        <React.Fragment>
           <Switch >
             <Route exact path="/" component={WrapUp} />
             <Route exact path="/page2" component={Page2} />
@@ -50,8 +52,7 @@ class App extends Component {
             </Route>
             <Route component={Nothing} status={404} />
           </Switch>
-        </div >
-
+        </React.Fragment>
       </Router>
     );
   }
