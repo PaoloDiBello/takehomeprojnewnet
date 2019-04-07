@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://paolodibello.github.io/takehomeprojnewnet",
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
@@ -12,7 +13,9 @@
     "react-lazy-load": "^3.0.13",
     "react-router": "^4.4.0",
     "react-router-dom": "^4.4.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-typed": "^1.1.2",
+    "typed.js": "^2.0.10"
   },
   "scripts": {
     "start": "react-scripts start",

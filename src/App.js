@@ -3,8 +3,12 @@ import './App.css';
 import SearchBar from './SearchBar'
 import ListPhotos from './ListPhotos'
 import { HashRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import MenuList from '@material-ui/core/MenuList';
+import MenuItem from '@material-ui/core/MenuItem';
+import Paper from '@material-ui/core/Paper';
 import Nothing from './Nothing.jsx'
 import Page2 from './Page2'
+
 
 //const MyContext = React.createContext();
 
@@ -22,10 +26,27 @@ class WrapUp extends Component {
 
 
   render() {
+
+
     return (
       <React.Fragment >
-        <Link to={"/Page2"}>Page2{' '}</Link><br />
-        <Link to={"/dfjdndjk"}>404</Link>
+
+        <Paper style={{ margin: '10px 20%' }} >
+          <MenuList >
+            <Link to={"/Page2"} style={{ textDecoration: 'none' }}>
+              <MenuItem >
+                Page2{' '}
+              </MenuItem>
+            </Link>
+            <Link to={"/dfjdndjk"}>
+              <MenuItem>
+                404
+            </MenuItem>
+            </Link>
+          </MenuList>
+        </Paper>
+        <br />
+
         <SearchBar passList={this.handleList} />
         <ListPhotos input={this.state.input} />
       </React.Fragment >

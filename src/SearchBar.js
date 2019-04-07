@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Typed from 'react-typed';
+import Input from '@material-ui/core/Input';
 
 export default class SearchBar extends Component {
     constructor(props) {
@@ -21,7 +23,21 @@ export default class SearchBar extends Component {
         // console.log('this.props', this.props)
         return (
             <form autocomplete="off">
-                <input type="text" name="input" onChange={this.handleInput} style={{ display: 'flex', margin: 'auto' }} />
+
+                <Typed
+                    strings={[
+                        'Search for photos',
+                        'Look away',
+                        'Kill yourself']}
+                    typeSpeed={40}
+                    backSpeed={50}
+                    attr=""
+                    loop
+                    style={{ display: 'flex', margin: '0 42%', textAlign: 'center' }} style={{ display: 'flex', margin: '0 42%', textAlign: 'center' }}
+                >
+                    <span ></span>
+                </Typed>
+                <Input type="text" name="input" onChange={this.handleInput} style={{ display: 'flex', margin: '0 42%', textAlign: 'center' }}></Input>
             </form >
         )
     }
