@@ -14,7 +14,7 @@ export default class ListPhotos extends Component {
     }
 
     async componentDidMount() {
-        const fetchPhotos = await fetch("http://jsonplaceholder.typicode.com/photos/");
+        const fetchPhotos = await fetch("https://jsonplaceholder.typicode.com/photos/");
         const photos = await fetchPhotos.json();
         this.setState({
             photos,
