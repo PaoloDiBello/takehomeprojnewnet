@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import SearchBar from './SearchBar'
-import ListPhotos from './ListPhotos'
+import SearchBar from './components/SearchBar/SearchBar'
+import ListPhotos from './components/ListPhotos/ListPhotos'
+import Nothing from './pages/404/Nothing'
 import { HashRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
 import Paper from '@material-ui/core/Paper';
-import Nothing from './Nothing.jsx'
-import Page2 from './Page2'
+import Page2 from './pages/Page2'
 
 
 //const MyContext = React.createContext();
