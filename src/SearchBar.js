@@ -22,7 +22,7 @@ export default class SearchBar extends Component {
     render() {
         // console.log('this.props', this.props)
         return (
-            <form autocomplete="off">
+            <form autoComplete="off">
 
                 <Typed
                     strings={[
@@ -33,7 +33,7 @@ export default class SearchBar extends Component {
                     backSpeed={50}
                     attr=""
                     loop
-                    style={{ display: 'flex', margin: '0 42%', textAlign: 'center' }} style={{ display: 'flex', margin: '0 42%', textAlign: 'center' }}
+                    style={{ display: 'flex', margin: '0 42%', textAlign: 'center' }}
                 >
                     <span ></span>
                 </Typed>
